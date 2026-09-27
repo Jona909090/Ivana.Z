@@ -42,7 +42,10 @@
             display: block; margin-top: 8px; color: rgba(255, 241, 220, .66);
             font: 700 10px/1.2 Arial, sans-serif; letter-spacing: .15em; text-transform: uppercase;
         }
-        .od-datuma { margin: -5px 0 0; color: rgba(255, 241, 220, .55); font-size: 14px; letter-spacing: .08em; }
+        .od-datuma {
+            max-width: 620px; margin: -5px 0 0; color: rgba(255, 241, 220, .62);
+            font-size: clamp(14px, 2.5vw, 17px); line-height: 1.6; letter-spacing: .035em;
+        }
         @keyframes okretanje {
             0%, 42% { transform: rotate(0deg); }
             50%, 92% { transform: rotate(180deg); }
@@ -65,7 +68,7 @@
                 <div class="jedinica"><span class="broj" id="minute">00</span><span class="oznaka">minuta</span></div>
                 <div class="jedinica"><span class="broj" id="sekunde">00</span><span class="oznaka">sekundi</span></div>
             </div>
-            <p class="od-datuma">od 6. oktobra 2025.</p>
+            <p class="od-datuma">6. oktobar 2025. — najgori dan u mom životu, dan kada je jedan deo mene zauvek stao.</p>
         </section>
     </main>
     <script>
